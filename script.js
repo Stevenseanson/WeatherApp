@@ -62,17 +62,18 @@ function getWeather(city) {
                 <div class="card-body">
                     <h5 class="card-title">${forecastDate}</h5>
                     <img src="${forecastIcon}"/>
-                    <p class="card-text">Temperature: ${forecastTemp} &#8451;</p>
+                    <p class="card-text">Temp: ${forecastTemp} &#8451;</p>
                     <p class="card-text">Humidity: ${forecastHumidity}%</p>
-                
+                 
                 </div>
+
             </div>
         </div>
     `);
         });
     })
 };
-
+// I am not sure how to put the wind in the 5 day forecast without breaking the whole function
 function displayHistory() {
 
     let history = JSON.parse(localStorage.getItem("searchHistory")) || [];

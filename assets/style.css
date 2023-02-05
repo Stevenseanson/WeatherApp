@@ -13,7 +13,7 @@ header {
 header h1 {
     color: white;
     font-size: 36px;
-    text-shadow: 1px 1px #333;
+    font-style: bold;
 }
 
 aside {
@@ -23,7 +23,7 @@ aside {
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: lightgray;
+    background-color: coral;
 }
 
 .list-group-item {
@@ -37,6 +37,44 @@ aside {
     padding: 10px;
     box-sizing: border-box;
 }
+
+#today {
+    border: solid 1px black;
+    padding-left: 10px;
+}
+
+#forecastH2 {
+    padding-top: 10px;
+}
+
+.col-sm-2 {
+    width: 50%;
+    /* adjust this value as needed */
+    display: inline-block;
+    margin: 0 20px;
+    /* add space between the cards */
+    box-sizing: border-box;
+}
+
+.card {
+    height: 250px;
+}
+
+.form-inline {
+    display: inline;
+}
+
+.input-group-append {
+    display: inline;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
 
 
 .weather-header {
@@ -63,9 +101,13 @@ aside {
     font-size: 18px;
     background-color: #007bff;
     color: #fff;
-    border: 2px black;
+
     border-radius: 5px;
     cursor: pointer;
+}
+
+#today {
+    background-color: rgb(247, 177, 107);
 }
 
 .card {
@@ -131,11 +173,4 @@ aside {
 
 .list-group-item {
     cursor: pointer;
-}
-
-#search-button {
-    border: solid 1px black;
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
 }
