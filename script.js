@@ -1,7 +1,7 @@
 function getWeather(city) {
     let APIKey = "e5e44e245d140ee80ea5efbb90b1358e";
-    let queryURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`;
-    let forecastURL = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APIKey}`;
+    let queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`;
+    let forecastURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APIKey}`;
 
     $.ajax({
         url: queryURL,
@@ -11,7 +11,7 @@ function getWeather(city) {
 
 
         let currentDate = moment().format("MM/DD/YYYY");
-        let icon = `http://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png`;
+        let icon = `https://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png`;
         let temperature = response.main.temp - 273.15;
         temperature = temperature.toFixed(2);
         let humidity = response.main.humidity;
@@ -52,7 +52,7 @@ function getWeather(city) {
 
         forecastData.forEach(function (reading) {
             let forecastDate = moment(reading.dt_txt).format("MM/DD/YYYY");
-            let forecastIcon = `http://openweathermap.org/img/wn/${reading.weather[0].icon}@2x.png`;
+            let forecastIcon = `https://openweathermap.org/img/wn/${reading.weather[0].icon}@2x.png`;
             let forecastTemp = (reading.main.temp - 273.15).toFixed(2);
             let forecastHumidity = reading.main.humidity;
 
