@@ -49,15 +49,15 @@ aside {
 
 .col-sm-2 {
     width: 50%;
-    /* adjust this value as needed */
     display: inline-block;
     margin: 0 20px;
-    /* add space between the cards */
     box-sizing: border-box;
 }
 
 .card {
     height: 250px;
+    background-color: lightcoral;
+    width: 200px;
 }
 
 .form-inline {
@@ -110,62 +110,6 @@ aside {
     background-color: rgb(247, 177, 107);
 }
 
-.card {
-    background-color: lightcoral;
-    width: 200px;
-}
-
-
-
-.current-weather-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-.current-date {
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 20px;
-}
-
-.current-weather-icon {
-    width: 50px;
-}
-
-.current-temperature {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.current-humidity {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-
-
-.forecast-date {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-
-
-.forecast-icon {
-    width: 50px;
-}
-
-.forecast-temperature {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.forecast-humidity {
-    font-size: 18px;
-    font-weight: bold;
-}
 
 .search-history {
     margin-top: 40px;
